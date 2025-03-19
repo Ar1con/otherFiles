@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>闪烁文字</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .blinking-text {
+            font-size: 48px;
+            font-weight: bold;
+            color: red;
+            animation: blink 1s infinite alternate;
+        }
+
+        @keyframes blink {
+            0% {
+                color: red;
+            }
+
+            50% {
+                color: yellow;
+            }
+
+            100% {
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blinking-text">郭依林大笨蛋！</div>
+</body>
+
+</html>
